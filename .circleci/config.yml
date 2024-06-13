@@ -27,13 +27,13 @@ jobs:
       BUNDLE_RETRY: "3"
       PGHOST: 127.0.0.1
       RAILS_ENV: test
-      PGSLICE_URL: "postgres://postgres:postgres@localhost:5432/rideshare_test"
+      PGSLICE_URL: "postgres://postgres:postgres@localhost:20530/rideshare_test"
     steps:
       - checkout
       - ruby/install-deps
       - run:
           name: Wait for DB
-          command: dockerize -wait tcp://localhost:5432 -timeout 1m
+          command: dockerize -wait tcp://localhost:20530 -timeout 1m
       - run:
           name: Test Database setup
           command: sh db/setup_test_database.sh

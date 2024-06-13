@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export SOURCE_DB="postgres://owner:@localhost:5432/rideshare_development"
+export SOURCE_DB="postgres://owner:@localhost:20530/rideshare_development"
 echo "STARTING scrub process..."
 echo "5 rows BEFORE scrubbing:"
 psql $SOURCE_DB -c "SELECT * FROM users ORDER BY id ASC LIMIT 5"

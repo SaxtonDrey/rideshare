@@ -46,7 +46,7 @@ if [ -z "$DATABASE_URL" ]; then
     echo "Error: DATABASE_URL is not set, which provides connection information for this script."
     echo "To set it, run the following in your terminal:"
     echo
-    echo "export DATABASE_URL='postgres://owner:@localhost:5432/rideshare_development'"
+    echo "export DATABASE_URL='postgres://owner:@localhost:20530/rideshare_development'"
     exit 1
 fi
 

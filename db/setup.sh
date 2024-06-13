@@ -34,7 +34,7 @@ if [ -z "$DB_URL" ]; then
     echo "Connect to the 'postgres' database to issue these commands"
     echo
     echo "See: db/setup.sh"
-    echo "Run: export DB_URL='postgres://postgres:@localhost:5432/postgres'"
+    echo "Run: export DB_URL='postgres://postgres:@localhost:20530/postgres'"
     exit 1
 fi
 
@@ -65,9 +65,9 @@ psql $DB_URL -a -f db/alter_default_privileges_public.sql
 
 # Add generated password to ~/.pgpass file
 echo "Add to ~/.pgpass"
-echo "localhost:5432:rideshare_development:owner:$RIDESHARE_DB_PASSWORD
+echo "localhost:20530:rideshare_development:owner:$RIDESHARE_DB_PASSWORD
 localhost:6432:rideshare_development:owner:$RIDESHARE_DB_PASSWORD
-localhost:5432:rideshare_development:app:$RIDESHARE_DB_PASSWORD
+localhost:20530:rideshare_development:app:$RIDESHARE_DB_PASSWORD
 localhost:54321:rideshare_development:owner:$RIDESHARE_DB_PASSWORD
 localhost:54322:rideshare_development:owner:$RIDESHARE_DB_PASSWORD
 *:*:*:replication_user:$RIDESHARE_DB_PASSWORD

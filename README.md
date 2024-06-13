@@ -104,7 +104,7 @@ Refer to `postgresql/.pgpass.sample` for an example, and copy the example into y
 When you've updated `~/.pgpass`, it should look like the line below. The last segment (`2C6uw3LprgUMwSLQ` below) is the password you generated.
 
 ```sh
-localhost:5432:rideshare_development:owner:2C6uw3LprgUMwSLQ
+localhost:20530:rideshare_development:owner:2C6uw3LprgUMwSLQ
 ```
 
 Run `chmod 0600 ~/.pgpass` to change the file mode (permissions).
@@ -130,7 +130,7 @@ SELECT current_user;
 Confirm user `owner` is displayed.
 
 ```sql
-owner@localhost:5432 rideshare_development# select current_user;
+owner@localhost:20530 rideshare_development# select current_user;
  current_user
  --------------
   owner
@@ -145,7 +145,7 @@ From psql, run the *describe namespace* meta-command:
 Verify the `rideshare` schema is displayed.
 
 ```sql
-owner@localhost:5432 rideshare_development# \dn
+owner@localhost:20530 rideshare_development# \dn
   List of schemas
    Name    | Owner
 -----------+-------

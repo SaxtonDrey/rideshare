@@ -6,7 +6,7 @@
 docker run \
   --name db02 \
   --volume ${PWD}/postgres-docker/db02:/var/lib/postgresql/data \
-  --publish 54322:5432 \
+  --publish 54322:20530 \
   --env POSTGRES_USER=postgres \
   --env POSTGRES_PASSWORD=postgres \
   --net=rideshare-net \

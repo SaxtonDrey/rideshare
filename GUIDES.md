@@ -15,7 +15,7 @@ This is not a superuser role, although it does have write capabilities.
 The password is supplied from `~/.pgpass`.
 
 ```sh
-export DATABASE_URL="postgres://app:@localhost:5432/rideshare_development"
+export DATABASE_URL="postgres://app:@localhost:20530/rideshare_development"
 ```
 
 The `app` user cannot `TRUNCATE` tables.

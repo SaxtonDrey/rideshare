@@ -19,7 +19,7 @@ bin/rails db
 We can also connect without `bin/rails dbconsole` and use psql directly.
 
 ```sh
-export DATABASE_URL=postgres://owner@localhost:5432/rideshare_development
+export DATABASE_URL=postgres://owner@localhost:20530/rideshare_development
 
 psql $DATABASE_URL
 ```

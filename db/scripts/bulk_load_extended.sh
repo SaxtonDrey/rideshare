@@ -34,7 +34,7 @@ FROM GENERATE_SERIES(1, 1_000_000) seq;
 
 if [ -z "$DATABASE_URL" ]; then
     echo "Error: DATABASE_URL is not set."
-    echo "Run: export DATABASE_URL='postgres://owner:@localhost:5432/rideshare_development'"
+    echo "Run: export DATABASE_URL='postgres://owner:@localhost:20530/rideshare_development'"
     exit 1
 fi
 
@@ -75,7 +75,7 @@ FROM GENERATE_SERIES(1, 1_000_000) seq;
 
 if [ -z "$DATABASE_URL" ]; then
     echo "Error: DATABASE_URL is not set."
-    echo "Run: export DATABASE_URL='postgres://owner:@localhost:5432/rideshare_development'"
+    echo "Run: export DATABASE_URL='postgres://owner:@localhost:20530/rideshare_development'"
     exit 1
 fi
 

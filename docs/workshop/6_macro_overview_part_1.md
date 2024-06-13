@@ -41,7 +41,7 @@ pg_ctl restart --pgdata "/Users/andy/Library/Application Support/Postgres/var-16
 psql -U postgres -d rideshare_development
 
 # Enable the extension (run `CREATE EXTENSION`)
-postgres@[local]:5432 rideshare_development# \dx
+postgres@[local]:20530 rideshare_development# \dx
                  List of installed extensions
   Name   | Version |   Schema   |         Description
 ---------+---------+------------+------------------------------
